@@ -6,6 +6,8 @@ vcpkg_from_gitlab(
     SHA512  f05fe51888b21c4f30ee898e4ff4cd32a913ca8660487b3e4d1679ff60fdc4db2449d02a4797db5c7682e0de9c520a7fb307e90091c9ab274d33988624947cef
     # Compute the SHA512 of the tar.gz file of the REF version via 'openssl sha512 "<downloaded-file-name>.tar.gz"'
     HEAD_REF vcpkg    # Always build from the latest commit of the specified branch if the REF and SHA512 is not set.
+    PATCHES
+        disable-the-example-executable.patch
 )
 
 vcpkg_configure_cmake(
