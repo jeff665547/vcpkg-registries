@@ -1,0 +1,16 @@
+{
+    "name": "maths",
+    "version": "0.1.0",
+    "port-version": 0,
+    "description": "A simple caculation package for demonstrating the use of the vcpkg dependency manager.",
+    "dependencies":[
+        {
+            "name": "spdlog",
+            "version>=": "1.9.2"
+        },
+        {
+            "name": "gtest",
+            "version>=": "1.11.0"
+        }
+    ]
+}
