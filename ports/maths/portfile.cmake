@@ -3,11 +3,9 @@ vcpkg_from_gitlab(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO centrillion/remoterepo
     REF v0.1.0-vcpkg  # Specify the version tag or the commit SHA from the remote repository.
-    SHA512  76c6d186f06babefd45878a149c00ffc9754ef2f5173e2dd2a5b5244f852c2aefdf2c10a76b2d0515f11c176201ea4dd2ac66793f3be18907f88308604e09005
+    SHA512  fc8f32c22e1f342802c1ababc85e896397ee45336280a3eed7452571bee783ebd57167dcd9bcc41fcee7c2dbba43bac6f4d0cdf4689519ac62ce9ac639e01064
     # Compute the SHA512 of the tar.gz file of the REF version via 'openssl sha512 "<downloaded-file-name>.tar.gz"'
     HEAD_REF vcpkg    # Always build from the latest commit of the specified branch if the REF and SHA512 is not set.
-    PATCHES
-        disable-the-example-executable.patch
 )
 
 vcpkg_configure_cmake(
