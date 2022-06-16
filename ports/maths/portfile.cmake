@@ -1,13 +1,10 @@
-vcpkg_from_gitlab(
-    GITLAB_URL http://gitlab.centrilliontech.com.tw:10088
+vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO centrillion/moduletemplate
+    REPO jeff665547/Module-Template
     REF v0.1.0-vcpkg  # Specify the version tag or the commit SHA from the remote repository.
-    SHA512  79bf4fc1f811647c4ced787b10352fb495eb806c9076e1cfbf1566226c8b15b95be5b286e9f300de77a7c5e5e52fba78a78148e8f8b9e4cd1e19696777d6d087
+    SHA512  24e929bb184221a4a3dc5ed16f5746a6c28cbe668fdfbc7c0814410afed00909664c681ce93a6eafc0d40baf52c9445e6bdd8ae1467cb2cee617ac8be30964b2
     # Compute the SHA512 of the tar.gz file of the REF version via 'openssl sha512 "<downloaded-file-name>.tar.gz"'
     HEAD_REF vcpkg    # Always build from the latest commit of the specified branch if the REF and SHA512 is not set.
-    PATCHES
-        disable-the-example-executable.patch
 )
 
 vcpkg_configure_cmake(
