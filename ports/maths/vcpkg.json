@@ -1,7 +1,7 @@
 {
     "name": "maths",
     "version": "0.1.0",
-    "port-version": 0,
+    "port-version": 1,
     "description": "A simple caculation package for demonstrating the use of the vcpkg dependency manager.",
     "dependencies":[
         {
